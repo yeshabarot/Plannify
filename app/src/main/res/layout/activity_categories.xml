@@ -1,0 +1,813 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categogry_p"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToOutline="true"
+    android:background="#311432"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="188dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:text="@string/headline"
+        android:textAlignment="center"
+        android:textAppearance="@style/headline"
+        android:lineSpacingExtra="-20sp"
+        android:gravity="center_horizontal|top"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/save_money_"
+        android:layout_width="317dp"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:text="@string/save_money_"
+        android:textAlignment="center"
+        android:textAppearance="@style/save_money_"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_horizontal|top"
+        />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="108dp"
+            android:text="@string/title"
+            android:textAppearance="@style/title"
+            android:gravity="top"
+            android:layout_marginLeft="10dp"
+            />
+        <HorizontalScrollView
+            android:layout_below="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cat_img5"/>
+                <TextView
+                    android:id="@+id/red_roses"
+                    android:layout_width="183.27dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Elegant pink roses"
+                    android:textAppearance="@style/red_roses"
+                    android:gravity="top"
+
+                    />
+
+                    <TextView
+                        android:id="@+id/new_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="Price: Rs 650"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/new_price"
+
+                        android:gravity="top"
+                        />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/btadd1"
+                        android:src="@drawable/cat_plusbut"
+                        android:contentDescription="minus 1 "
+                        android:layout_marginRight="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_toRightOf="@id/btadd1"
+                        android:id="@+id/txt1"
+                        android:textSize="30dp"
+                        android:paddingTop="5dp"
+                        android:textAppearance="@style/new_price"/>
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/btsub1"
+                        android:src="@drawable/cat_minbut"
+                        android:contentDescription="minus 1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/txt1"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cat_img6"/>
+                <TextView
+                    android:id="@+id/red_roses2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Box of Red roses"
+                    android:textAppearance="@style/red_roses"
+                    android:gravity="top"
+
+                    />
+
+                <TextView
+                    android:id="@+id/new_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="Price: Rs 800"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="@style/new_price"
+
+                    android:gravity="top"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/btadd2"
+                        android:src="@drawable/cat_plusbut"
+                        android:contentDescription="minus 1"
+                        android:layout_marginRight="20dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_toRightOf="@id/btadd2"
+                        android:id="@+id/txt2"
+                        android:textSize="30dp"
+                        android:paddingTop="5dp"
+                        android:textAppearance="@style/new_price"/>
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/btsub2"
+                        android:src="@drawable/cat_minbut"
+                        android:contentDescription="minus 1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/txt2"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cat_img7"/>
+                <TextView
+                    android:id="@+id/red_roses3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Bouquet of red roses"
+                    android:layout_marginRight="5dp"
+                    android:textAppearance="@style/red_roses"
+                    android:gravity="top"
+
+                    />
+
+                <TextView
+                    android:id="@+id/new_price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="Price: Rs 700"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="@style/new_price"
+
+                    android:gravity="top"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/btadd3"
+                        android:src="@drawable/cat_plusbut"
+                        android:contentDescription="minus 1"
+                        android:layout_marginRight="20dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_toRightOf="@id/btadd3"
+                        android:id="@+id/txt3"
+                        android:textSize="30dp"
+                        android:paddingTop="5dp"
+                        android:textAppearance="@style/new_price"/>
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/btsub3"
+                        android:src="@drawable/cat_minbut"
+                        android:contentDescription="minus 1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/txt3"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="490dp"
+            android:text="Chocolates"
+            android:textAppearance="@style/title"
+            android:gravity="top"
+            android:layout_marginLeft="10dp"
+            />
+        <HorizontalScrollView
+            android:layout_below="@id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/title"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cat_img8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="Ferrero Rocher Bouquet"
+                        android:textAppearance="@style/red_roses"
+                        android:gravity="top"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="Price: Rs 500"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/new_price"
+
+                        android:gravity="top"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btadd4"
+                            android:src="@drawable/cat_plusbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginRight="20dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@id/btadd4"
+                            android:id="@+id/txt4"
+                            android:textSize="30dp"
+                            android:paddingTop="5dp"
+                            android:textAppearance="@style/new_price"/>
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btsub4"
+                            android:src="@drawable/cat_minbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/txt4"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cat_img9"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="Crunchy Kitkat Bouquet"
+                        android:textAppearance="@style/red_roses"
+                        android:gravity="top"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="Price: Rs 550"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/new_price"
+
+                        android:gravity="top"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btadd5"
+                            android:src="@drawable/cat_plusbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginRight="20dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@id/btadd5"
+                            android:id="@+id/txt5"
+                            android:textSize="30dp"
+                            android:paddingTop="5dp"
+                            android:textAppearance="@style/new_price"/>
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btsub5"
+                            android:src="@drawable/cat_minbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/txt5"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cat_img10"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Dairy Milk Bouquet"
+                        android:textAppearance="@style/red_roses"
+                        android:gravity="top"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="Price: Rs 300"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/new_price"
+
+                        android:gravity="top"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btadd6"
+                            android:src="@drawable/cat_plusbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginRight="20dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@id/btadd6"
+                            android:id="@+id/txt6"
+                            android:textSize="30dp"
+                            android:paddingTop="5dp"
+                            android:textAppearance="@style/new_price"/>
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btsub6"
+                            android:src="@drawable/cat_minbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/txt6"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </HorizontalScrollView>
+
+
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="900dp"
+            android:text="Extras"
+            android:textAppearance="@style/title"
+            android:gravity="top"
+            android:layout_marginLeft="10dp"
+            />
+        <HorizontalScrollView
+            android:layout_below="@id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/title"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cat_img11"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="SkinCare Hamper"
+                        android:textAppearance="@style/red_roses"
+                        android:gravity="top"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="Price: Rs 1100"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/new_price"
+
+                        android:gravity="top"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btadd7"
+                            android:src="@drawable/cat_plusbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginRight="20dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@id/btadd7"
+                            android:id="@+id/txt7"
+                            android:textSize="30dp"
+                            android:paddingTop="5dp"
+                            android:textAppearance="@style/new_price"/>
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btsub7"
+                            android:src="@drawable/cat_minbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/txt7"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="40dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cat_img12"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="Bella Vita Perfume"
+                        android:textAppearance="@style/red_roses"
+                        android:gravity="top"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="Price: Rs 500"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/new_price"
+
+                        android:gravity="top"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btadd8"
+                            android:src="@drawable/cat_plusbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginRight="20dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@id/btadd8"
+                            android:id="@+id/txt8"
+                            android:textSize="30dp"
+                            android:paddingTop="5dp"
+                            android:textAppearance="@style/new_price"/>
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btsub8"
+                            android:src="@drawable/cat_minbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/txt8"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cat_img13"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="ButterCream Cake"
+                        android:textAppearance="@style/red_roses"
+                        android:gravity="top"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="Price: Rs 700"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/new_price"
+
+                        android:gravity="top"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btadd9"
+                            android:src="@drawable/cat_plusbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginRight="20dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@id/btadd9"
+                            android:id="@+id/txt9"
+                            android:textSize="30dp"
+                            android:paddingTop="5dp"
+                            android:textAppearance="@style/new_price"/>
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btsub9"
+                            android:src="@drawable/cat_minbut"
+                            android:contentDescription="minus 1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/txt9"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expected Cost: Rs "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:id="@+id/txt10"
+            android:textAlignment="center"
+            android:layout_marginTop="1300dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="35dp"
+
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:id="@+id/txt"
+                android:textAlignment="center"
+                android:layout_marginTop="1300dp"
+                android:layout_marginBottom="50dp"
+
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

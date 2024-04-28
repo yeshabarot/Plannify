@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".memoryLane"
+    android:background="@drawable/cover_bg">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:fontFamily="@font/fredoka_one"
+            android:gravity="top"
+
+            android:text="Memory Lane"
+            android:textAppearance="@style/login"
+            android:textSize="48sp" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp"
+            android:id="@+id/addMemory"
+            android:onClick="openNew">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addMemory_Img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Add Memory"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                     />
+
+                <ImageView
+                    android:id="@+id/addMemory_Img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/add_memory" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_below="@+id/addMemory"
+            android:layout_marginTop="20dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/gallery"
+            android:onClick="openNew">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gallery_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="Gallery"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/gallery_img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/gallery" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

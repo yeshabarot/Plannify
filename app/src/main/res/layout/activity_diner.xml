@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diner"
+    android:background="#311432">
+
+    <View
+        android:id="@+id/cappuccino"
+        android:layout_width="370dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/diner" />
+
+
+
+    <ImageView
+        android:id="@+id/cafe_topID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="260dp"
+        android:src="@drawable/cafe_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cafe_topID"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="320dp"
+                android:layout_below="@+id/cappuccino">
+
+                <HorizontalScrollView
+                    android:id="@+id/cafe1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="350dp"
+                            android:layout_height="212dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rest1_p1" />
+
+                        <View
+                            android:layout_width="350dp"
+                            android:layout_height="212dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rest1_p2" />
+
+                        <View
+                            android:layout_width="350dp"
+                            android:layout_height="212dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rest1_p3" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/cafe_p1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="235dp"
+                    android:gravity="top"
+                    android:text="Gustos   $$$"
+                    android:textAppearance="@style/gusto_s_piz" />
+
+                <TextView
+                    android:id="@+id/address1"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="265dp"
+                    android:gravity="top"
+                    android:text="9, Odhavpura, Ellora Park, Hari Nagar, Vadodara, Gujarat 390023"
+                    android:textAppearance="@style/address" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_below="@+id/cappuccino">
+
+        <HorizontalScrollView
+            android:id="@+id/cafe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:contentDescription="cafe 2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="212dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/rest2_p1" />
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="212dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/rest2_p2" />
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="212dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/rest2_p3" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/cafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="235dp"
+            android:gravity="top"
+            android:text="Jassi De Parathe   $$"
+            android:textAppearance="@style/gusto_s_piz" />
+
+        <TextView
+            android:id="@+id/address2"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="265dp"
+            android:gravity="top"
+            android:text="Panorama Complex, 1, RC Dutt Rd, Opp Welcome Hotel, Alkapuri, Vadodara, Gujarat 390007"
+            android:textAppearance="@style/address" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_below="@+id/cappuccino">
+
+        <HorizontalScrollView
+            android:id="@+id/cafe3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="cafe 2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="212dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/rest3_p1" />
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="212dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/rest3_p2" />
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="212dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/rest3_p3" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/gusto_s_piz3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="235dp"
+            android:gravity="top"
+            android:text="BentoB   $$$"
+            android:textAppearance="@style/gusto_s_piz" />
+
+        <TextView
+            android:id="@+id/address3"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="265dp"
+            android:gravity="top"
+            android:text="R2, Museum Square, Alembic City, Gorwa, Vadodara, Gujarat 390003"
+            android:textAppearance="@style/address" />
+
+    </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Auto layout, variables, and unit scale are not yet supported -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover_bg">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:layout_marginTop="-10dp"
+        app:srcCompat="@drawable/signin_design" />
+
+    <TextView
+        android:id="@+id/login_emailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FP_msg"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/email"
+        android:textAppearance="@style/login_emailTV" />
+
+    <TextView
+        android:id="@+id/FP_msg"
+        android:layout_width="312dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/FP_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/anton"
+        android:gravity="center_horizontal|top"
+        android:text="@string/a_message_w"
+        android:textAppearance="@style/a_message_w"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/FP_heading"
+        android:layout_width="242dp"
+        android:layout_height="118dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center_horizontal"
+        android:text="Forgot Password"
+
+        android:textAppearance="@style/login" />
+
+
+    <EditText
+        android:id="@+id/FP_email"
+        android:layout_width="350dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/FP_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/signin_inputshape"
+        android:hint="    Enter Your Registered Email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/FP_button"
+        android:layout_width="319dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/FP_email"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/signin_button"
+        android:elevation="12dp"
+        android:text="Send"
+        android:textColor="#FFFEFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/registerNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FP_button"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-250dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/bottomtext"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Terms of Services and Privacy Policy"
+        android:textColor="#E487FB"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/bottomtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FP_button"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/poppins_medium"
+        android:text="By continuing you agree Planner‘s "
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/image_1"
+        android:layout_width="279dp"
+        android:layout_height="119dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="151dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/login_dia" />
+
+
+</RelativeLayout>
+
+
+
